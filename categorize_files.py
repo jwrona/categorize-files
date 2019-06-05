@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 """
-Create a categorized image of a messy directory. Contained files are classified
-according to their suffix or MIME type.
+Create a categorized image of an unorganized directory (e.g. disk dump).
+Each contained file is classified according to its suffix or MIME type and
+moved/copied/linked to a corresponding directory in the output directory.
 """
 
 import sys
@@ -167,7 +168,7 @@ def main():
     if ARGS.output_dir:
         output_dir = ARGS.output_dir
     else:
-        output_dir = Path('categorized_by_' + ARGS.criterion)
+        output_dir = Path(input_dir.name + '_categorized_by_' + ARGS.criterion)
 
     # ensure that the output directory is not inside the input directory
     try:
