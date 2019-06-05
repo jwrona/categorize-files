@@ -153,7 +153,7 @@ Set by the `-i/--image-structure` argument with one of the following options:
 - `flat_name` -- input directories are not preserved.
   Collisions are possible.
 ```
-input_categorized_by_suffix/
+input_categorized_by_suffix
 ├── py
 │   ├── python_script.py
 │   └── python_script.py.1
@@ -168,7 +168,7 @@ input_categorized_by_suffix/
   characters are replaced with underscores).
   Collisions are possible.
 ```
-input_categorized_by_suffix/
+input_categorized_by_suffix
 ├── py
 │   ├── app1_python_script.py
 │   └── app2_python_script.py
@@ -182,7 +182,7 @@ input_categorized_by_suffix/
 - `nested` -- input directories are preserved.
   Collisions are not possible.
 ```
-input_categorized_by_suffix/
+input_categorized_by_suffix
 ├── py
 │   ├── app1
 │   │   └── python_script.py
