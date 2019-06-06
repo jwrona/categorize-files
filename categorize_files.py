@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 """
-Create a categorized image of an unorganized directory (e.g. disk dump).
-Each contained file is classified according to its suffix or MIME type and
-moved/copied/linked to a corresponding directory in the output directory.
+Create a categorized image of an unorganized directory (e.g. a disk dump).
+Each contained file is classified according to its suffix or signatures (also
+known as magic numbers or magic bytes) and moved/copied/linked to a
+corresponding directory in the output directory.
 """
 
 import argparse

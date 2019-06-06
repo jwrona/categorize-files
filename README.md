@@ -1,7 +1,8 @@
 # File Categorization Utility
-Create a categorized image of an unorganized directory (e.g. disk dump).
-Each contained file is classified according to its suffix or MIME type and
-moved/copied/linked to a corresponding directory in the output directory.
+Create a categorized image of an unorganized directory (e.g. a disk dump).
+Each contained file is classified according to its suffix or signatures (also
+known as magic numbers or magic bytes) and moved/copied/linked to a
+corresponding directory in the output directory.
 
 ## Quick Example
 If you want to organize a directory which looks like this (or possibly a
@@ -15,10 +16,10 @@ big_mess
 │       ├── nice.jpg
 │       └── wow.mkv
 ├── documents
-│   ├── even_more_important
+│   ├── dir1
 │   │   ├── not_a_doc.doc
 │   │   └── untitled.ods
-│   ├── important
+│   ├── dir2
 │   │   ├── document.odt
 │   │   └── untitled.ods
 │   └── recording.mp3
@@ -208,3 +209,6 @@ input_categorized_by_suffix
   - In POSIX, the limis is defined by `NAME_MAX` which is usually set to 255
     chars.
   - To eliminate this, some kind of name ellipsization would be necessary.
+- Some information about file format identification can be found
+  [here](https://en.wikipedia.org/wiki/File_format#Identifying_file_type) or
+  [here](https://www.forensicswiki.org/wiki/File_Format_Identification)
