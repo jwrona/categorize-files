@@ -6,13 +6,13 @@ Each contained file is classified according to its suffix or MIME type and
 moved/copied/linked to a corresponding directory in the output directory.
 """
 
-import sys
-import os
-from pathlib import Path
-import shutil
 import argparse
-import mimetypes
 import logging
+import mimetypes
+import os
+import shutil
+import sys
+from pathlib import Path
 
 import magic  # https://github.com/ahupp/python-magic
 
